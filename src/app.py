@@ -19,6 +19,42 @@ except FileNotFoundError:
     st.error("Error al cargar el archivo. Verifica si está en la ruta ./data/raw/")
 
 
+st.markdown("---")
+
+
+
+st.markdown(
+    """
+    <style>
+    .banner {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    </style>
+    <div class="banner">
+        🌟 <b>Descubre el Sentimiento de tus Comentarios en Twitter</b> 🌟<br>
+        🚀 ¡Explora tendencias, palabras clave y más!
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
 st.subheader("Predicción de Sentimientos")
 comentario_usuario = st.text_input("Escribe tu comentario aquí:")
 if st.button("Predecir Sentimiento"):
